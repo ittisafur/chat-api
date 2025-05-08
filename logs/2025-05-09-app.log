@@ -1,0 +1,113 @@
+{"level":"error","message":"jwt malformed","name":"JsonWebTokenError","service":"chat-api","stack":"JsonWebTokenError: jwt malformed\n    at Object.module.exports [as verify] (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/jsonwebtoken/verify.js:70:17)\n    at /media/undefined/Works/Codes and Projects/practice/chat-api/src/middleware/auth.ts:38:25\n    at Generator.next (<anonymous>)\n    at /media/undefined/Works/Codes and Projects/practice/chat-api/src/middleware/auth.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/media/undefined/Works/Codes and Projects/practice/chat-api/src/middleware/auth.ts:4:12)\n    at authenticate (/media/undefined/Works/Codes and Projects/practice/chat-api/src/middleware/auth.ts:26:87)\n    at Layer.handle [as handle_request] (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/express/lib/router/index.js:328:13)\n    at /media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/express/lib/router/index.js:286:9","timestamp":"2025-05-09 00:27:08"}
+{"code":"EDNS","command":"CONN","errno":-3008,"hostname":"smtp.example.com","level":"error","message":"Error sending verification email getaddrinfo ENOTFOUND smtp.example.com","service":"chat-api","stack":"Error: getaddrinfo ENOTFOUND smtp.example.com\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)","syscall":"getaddrinfo","timestamp":"2025-05-09 00:28:09"}
+{"level":"error","message":"Registration error Failed to send verification email","service":"chat-api","stack":"Error: Failed to send verification email\n    at /media/undefined/Works/Codes and Projects/practice/chat-api/src/services/email.service.ts:35:11\n    at Generator.throw (<anonymous>)\n    at rejected (/media/undefined/Works/Codes and Projects/practice/chat-api/src/services/email.service.ts:6:65)","timestamp":"2025-05-09 00:28:09"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 00:31:38"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 00:31:39"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 00:31:39"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 00:31:39"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 00:31:39"}
+{"code":"EAUTH","command":"AUTH PLAIN","level":"error","message":"Error sending verification email Invalid login: 535 5.7.8 Authentication failed","response":"535 5.7.8 Authentication failed","responseCode":535,"service":"chat-api","stack":"Error: Invalid login: 535 5.7.8 Authentication failed\n    at SMTPConnection._formatError (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/nodemailer/lib/smtp-connection/index.js:809:19)\n    at SMTPConnection._actionAUTHComplete (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/nodemailer/lib/smtp-connection/index.js:1588:34)\n    at SMTPConnection.<anonymous> (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/nodemailer/lib/smtp-connection/index.js:556:26)\n    at SMTPConnection._processResponse (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/nodemailer/lib/smtp-connection/index.js:993:20)\n    at SMTPConnection._onData (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/nodemailer/lib/smtp-connection/index.js:774:14)\n    at TLSSocket.SMTPConnection._onSocketData (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)\n    at TLSSocket.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)\n    at TLSSocket.Readable.push (node:internal/streams/readable:390:5)","timestamp":"2025-05-09 00:31:58"}
+{"level":"error","message":"Registration error Failed to send verification email","service":"chat-api","stack":"Error: Failed to send verification email\n    at /media/undefined/Works/Codes and Projects/practice/chat-api/src/services/email.service.ts:35:11\n    at Generator.throw (<anonymous>)\n    at rejected (/media/undefined/Works/Codes and Projects/practice/chat-api/src/services/email.service.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-05-09 00:31:58"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 00:34:15"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 00:37:00"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 00:37:00"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 00:37:00"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 00:37:00"}
+{"level":"error","message":"Error sending verification email Unauthorized","response":{"header":{"access-control-allow-credentials":"true","access-control-allow-headers":"*","access-control-allow-methods":"PUT, POST, GET, DELETE, PATCH, OPTIONS","access-control-allow-origin":"*","cf-cache-status":"DYNAMIC","cf-ray":"93cb11c8c808fdd8-MUC","connection":"close","content-length":"50","content-type":"application/json","date":"Thu, 08 May 2025 18:37:38 GMT","server":"cloudflare","sib-request-id":"7f8460c7-19f5-9510-878d-dde3448f821f","x-envoy-upstream-service-time":"3"},"req":{"data":{"htmlContent":"\n      <h1>Email Verification</h1>\n      <p>Please click on the link below to verify your email address:</p>\n      <a href=\"http://localhost:3000/verify-email?token=fa0a51bd02e671ef679b7da928709c2447f9099ab2d6181bfd64212b2e1b5c91\">Verify Email</a>\n      <p>If you did not request this verification, please ignore this email.</p>\n    ","sender":{"email":"admin@ittisafur.com","name":"Chat API"},"subject":"Email Verification","to":[{"email":"ittisafurwebdesign@gmail.com"}]},"headers":{"accept":"application/json","api-key":"your-brevo-api-key-here","content-type":"application/json","user-agent":"sendinblue_clientAPI/v8.5.0/node"},"method":"POST","url":"https://api.sendinblue.com/v3/smtp/email"},"status":401,"text":"{\"message\":\"Key not found\",\"code\":\"unauthorized\"}\n"},"service":"chat-api","stack":"Error: Unauthorized\n    at Request.callback (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/superagent/lib/node/index.js:688:13)\n    at /media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/superagent/lib/node/index.js:891:18\n    at IncomingMessage.<anonymous> (/media/undefined/Works/Codes and Projects/practice/chat-api/node_modules/superagent/lib/node/parsers/json.js:17:7)\n    at IncomingMessage.emit (node:events:531:35)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","status":401,"timestamp":"2025-05-09 00:37:38"}
+{"level":"info","message":"[DEV] Verification token for ittisafurwebdesign@gmail.com: fa0a51bd02e671ef679b7da928709c2447f9099ab2d6181bfd64212b2e1b5c91","service":"chat-api","timestamp":"2025-05-09 00:37:38"}
+{"level":"info","message":"[DEV] User ittisafurwebdesign@gmail.com automatically verified for testing","service":"chat-api","timestamp":"2025-05-09 00:37:38"}
+{"level":"error","message":"Registration error Failed to send verification email","service":"chat-api","stack":"Error: Failed to send verification email\n    at /media/undefined/Works/Codes and Projects/practice/chat-api/src/services/email.service.ts:58:11\n    at Generator.next (<anonymous>)\n    at fulfilled (/media/undefined/Works/Codes and Projects/practice/chat-api/src/services/email.service.ts:5:58)","timestamp":"2025-05-09 00:37:38"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 00:40:21"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 00:40:23"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 00:40:23"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 00:40:23"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 00:40:23"}
+{"level":"info","message":"Verification email sent to bhalonah@gmail.com","service":"chat-api","timestamp":"2025-05-09 00:40:38"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:01:46"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:01:46"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:01:46"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:01:46"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:02:08"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:02:08"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:02:08"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:02:08"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:02:34"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:02:34"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:02:34"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:02:34"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:03:11"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:03:11"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:03:11"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:03:11"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:04:01"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:04:01"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:04:01"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:04:01"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:04:45"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:04:45"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:04:45"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:04:45"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:05:12"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:05:12"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:05:12"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:05:12"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:05:23"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:05:23"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:05:23"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:05:23"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:05:52"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:05:52"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:05:52"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:05:52"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:05:56"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:05:56"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:05:56"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:05:56"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:06:01"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:06:01"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:06:01"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:06:01"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:06:26"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:06:26"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:06:26"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:06:26"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:06:48"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:06:48"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:06:48"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:06:48"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:07:47"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:07:47"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:07:47"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:07:47"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:08:05"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:08:05"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:08:05"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:08:05"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:08:29"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:08:29"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:08:29"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:08:29"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:08:40"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:08:40"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:08:40"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:08:40"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 01:09:01"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:09:04"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:09:04"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:09:04"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:09:04"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:09:25"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:09:25"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:09:25"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:09:25"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 01:09:26"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:09:28"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:09:28"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:09:28"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:09:28"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 01:09:37"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:14:40"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:14:40"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:14:40"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:14:40"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 01:17:35"}
