@@ -127,3 +127,53 @@
 {"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:57:15"}
 {"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:57:15"}
 {"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 01:57:16"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 02:11:51"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 02:11:51"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 02:11:51"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 02:11:51"}
+{"level":"info","message":"Verification email sent to dark.kinght3@gmail.com","service":"chat-api","timestamp":"2025-05-09 02:13:58"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 02:16:55"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 02:16:57"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 02:16:57"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 02:16:57"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 02:16:57"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 02:18:22"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 02:18:22"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 02:18:22"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 02:18:22"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 02:18:50"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 02:18:50"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 02:18:50"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 02:18:50"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 02:19:49"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 02:19:49"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 02:19:49"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 02:19:49"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 02:21:21"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 02:21:30"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 02:21:30"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 02:21:30"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 02:21:30"}
+{"level":"info","message":"Verification email sent to dark.kinght@gmail.com","service":"chat-api","timestamp":"2025-05-09 02:23:19"}
+{"level":"info","message":"Verification email sent to ittisafurwebdesign@gmail.com","service":"chat-api","timestamp":"2025-05-09 02:26:56"}
+{"level":"info","message":"Verification email sent to dark.kinght3@gmail.com","service":"chat-api","timestamp":"2025-05-09 02:27:54"}
+{"level":"info","message":"Verification email sent to ittisafurwebdesign@gmail.com","service":"chat-api","timestamp":"2025-05-09 02:32:48"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 02:38:03"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 02:38:03"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 02:38:03"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 02:38:03"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 02:38:11"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 02:38:13"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 02:38:13"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 02:38:13"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 02:38:13"}
+{"level":"info","message":"User connected: c2807f1d-7124-446a-b1ff-eb542e31d2b4","service":"chat-api","timestamp":"2025-05-09 02:38:15"}
+{"level":"info","message":"User disconnected: c2807f1d-7124-446a-b1ff-eb542e31d2b4","service":"chat-api","timestamp":"2025-05-09 02:38:21"}
+{"level":"info","message":"Verification email sent to ittisafurwebdesign@gmail.com","service":"chat-api","timestamp":"2025-05-09 02:39:45"}
+{"level":"info","message":"Verification email sent to dark.kinght3@gmail.com","service":"chat-api","timestamp":"2025-05-09 02:40:37"}
+{"level":"info","message":"User connected: 068b6190-8ccb-4f95-a9b6-b8d9618f33f9","service":"chat-api","timestamp":"2025-05-09 02:42:02"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 03:04:06"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 03:04:06"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 03:04:06"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 03:04:06"}
+{"level":"info","message":"User connected: 068b6190-8ccb-4f95-a9b6-b8d9618f33f9","service":"chat-api","timestamp":"2025-05-09 03:04:06"}

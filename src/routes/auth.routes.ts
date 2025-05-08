@@ -1,7 +1,13 @@
 import { Router } from 'express';
 import { processRequestBody } from 'zod-express-middleware';
 import { loginSchema, registerUserSchema, verifyEmailSchema } from '../utils/validators';
-import { register, login, verifyEmail, resendVerification } from '../controllers/auth/auth.controller';
+import {
+  register,
+  login,
+  verifyEmail,
+  resendVerification,
+  verifyEmailWithGet,
+} from '../controllers/auth/auth.controller';
 
 const router = Router();
 
@@ -149,5 +155,7 @@ router.post('/verify-email', processRequestBody(verifyEmailSchema), verifyEmail)
  *         description: Server error
  */
 router.post('/resend-verification', resendVerification);
+
+router.get('/verify-email', verifyEmailWithGet);
 
 export default router;

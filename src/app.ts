@@ -22,7 +22,7 @@ const httpServer = createServer(app);
 // Define allowed origins
 const allowedOrigins = process.env.CORS_ORIGINS
   ? process.env.CORS_ORIGINS.split(',')
-  : ['https://chat-frontend-phi-ten.vercel.app', 'http://localhost:3000', 'http://localhost:5173'];
+  : ['https://chat-frontend-phi-ten.vercel.app', 'http://localhost:3000', 'http://localhost:5500'];
 
 // Set up Socket.IO
 const io = new Server(httpServer, {

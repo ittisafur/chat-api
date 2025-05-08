@@ -8,7 +8,7 @@ const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
 export const sendVerificationEmail = async (email: string, token: string) => {
   try {
-    const verificationUrl = `${process.env.FRONTEND_URL || 'http://localhost:3000'}/verify-email?token=${token}`;
+    const verificationUrl = `${process.env.API_URL || 'http://localhost:3000'}/api/auth/verify-email?token=${token}`;
 
     const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
 

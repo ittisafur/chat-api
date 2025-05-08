@@ -1,6 +1,8 @@
 import swaggerJsdoc from 'swagger-jsdoc';
 import { version } from '../../package.json';
 
+const serverUrl = process.env.API_URL || 'https://chat-api-production-5d37.up.railway.app';
+
 const options = {
   definition: {
     openapi: '3.0.0',
@@ -11,8 +13,8 @@ const options = {
     },
     servers: [
       {
-        url: `http://localhost:${process.env.PORT || 3000}`,
-        description: 'Development server',
+        url: serverUrl,
+        description: 'API Server',
       },
     ],
     components: {
