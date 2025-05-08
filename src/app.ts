@@ -43,8 +43,25 @@ app.use(
   }),
 );
 
-// Security and utility middleware
-app.use(helmet());
+// Configure Helmet with relaxed CSP for Swagger UI
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+        styleSrc: ["'self'", "'unsafe-inline'"],
+        imgSrc: ["'self'", 'data:'],
+        connectSrc: ["'self'", 'http://localhost:3000', 'https://chat-api-production-5d37.up.railway.app'],
+        fontSrc: ["'self'"],
+        objectSrc: ["'none'"],
+        mediaSrc: ["'self'"],
+        frameSrc: ["'self'"],
+      },
+    },
+  }),
+);
+
 app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -79,8 +96,5 @@ app.use((err: Error, req: Request, res: Response, _next: NextFunction) => {
 
 // Set up Socket.IO event handlers
 setupSocketIO(io);
-
-// Log allowed origins for debugging
-logger.info(`CORS configured for origins: ${allowedOrigins.join(', ')}`);
 
 export { app, httpServer };
