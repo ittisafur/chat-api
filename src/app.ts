@@ -15,16 +15,16 @@ import authRoutes from './routes/auth.routes';
 import userRoutes from './routes/user.routes';
 import adminRoutes from './routes/admin.routes';
 
+// Create Express app
+const app: Application = express();
+const httpServer = createServer(app);
+
 // Define allowed origins
 const allowedOrigins = process.env.CORS_ORIGINS
   ? process.env.CORS_ORIGINS.split(',')
   : ['https://chat-frontend-phi-ten.vercel.app', 'http://localhost:3000', 'http://localhost:5173'];
 
-// Create Express app
-const app: Application = express();
-const httpServer = createServer(app);
-
-// Set up Socket.IO with proper CORS
+// Set up Socket.IO
 const io = new Server(httpServer, {
   cors: {
     origin: allowedOrigins,
@@ -43,28 +43,22 @@ app.use(
   }),
 );
 
-// Configure Helmet with relaxed CSP for Swagger UI
-app.use(
-  helmet({
-    contentSecurityPolicy: {
-      directives: {
-        defaultSrc: ["'self'"],
-        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
-        styleSrc: ["'self'", "'unsafe-inline'"],
-        imgSrc: ["'self'", 'data:'],
-        connectSrc: ["'self'", 'http://localhost:3000', 'https://chat-api-production-5d37.up.railway.app'],
-        fontSrc: ["'self'"],
-        objectSrc: ["'none'"],
-        mediaSrc: ["'self'"],
-        frameSrc: ["'self'"],
-      },
-    },
-  }),
-);
-
+// Apply middleware
 app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// IMPORTANT: Apply Helmet with CSP disabled ONLY for Swagger routes
+app.use(
+  '/api/docs',
+  helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false,
+  }),
+);
+
+// Apply standard Helmet security for all other routes
+app.use(helmet());
 
 // Apply rate limiter
 app.use(rateLimiter);
