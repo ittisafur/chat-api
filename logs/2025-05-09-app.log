@@ -111,3 +111,19 @@
 {"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:14:40"}
 {"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:14:40"}
 {"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 01:17:35"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:38:52"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:38:52"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:38:52"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:38:52"}
+{"level":"info","message":"User connected: 9fcd3b5a-3822-48ad-83cd-7ff6fa63cea3","service":"chat-api","timestamp":"2025-05-09 01:40:04"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 01:54:25"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:54:35"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:54:35"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:54:35"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:54:35"}
+{"level":"info","message":"CORS configured for origins: https://chat-frontend-phi-ten.vercel.app, http://localhost:3000, http://localhost:5173","service":"chat-api","timestamp":"2025-05-09 01:57:15"}
+{"level":"info","message":"Connected to database","service":"chat-api","timestamp":"2025-05-09 01:57:15"}
+{"level":"info","message":"Server running on port 3000","service":"chat-api","timestamp":"2025-05-09 01:57:15"}
+{"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 01:57:15"}
+{"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 01:57:15"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 01:57:16"}
