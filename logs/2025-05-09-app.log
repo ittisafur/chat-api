@@ -177,3 +177,4 @@
 {"level":"info","message":"User API docs available at http://localhost:3000/api/docs/user","service":"chat-api","timestamp":"2025-05-09 03:04:06"}
 {"level":"info","message":"Admin API docs available at http://localhost:3000/api/docs/admin","service":"chat-api","timestamp":"2025-05-09 03:04:06"}
 {"level":"info","message":"User connected: 068b6190-8ccb-4f95-a9b6-b8d9618f33f9","service":"chat-api","timestamp":"2025-05-09 03:04:06"}
+{"level":"info","message":"Disconnected from database","service":"chat-api","timestamp":"2025-05-09 03:09:56"}
