@@ -41,6 +41,11 @@ A powerful, secure REST API that provides real-time messaging capabilities with 
 - Winston logger with daily rotation
 - Detailed error tracking
 
+### 🔄 API Documentation (Swagger)
+
+- [User API Docs](https://chat-api-production-5d37.up.railway.app/api/docs/user)
+- [Admin API Docs](https://chat-api-production-5d37.up.railway.app/api/docs/admin)
+
 ## 🏗️ Architecture
 
 src/
