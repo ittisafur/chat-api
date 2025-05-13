@@ -88,6 +88,7 @@ npm install
 
 ### 2. Set up environment variables
 
+```bash
 NODE_ENV=development
 PORT=3000
 DATABASE_URL="postgresql://username:password@localhost:5432/chat_api_db?schema=public"
@@ -100,6 +101,8 @@ RATE_LIMIT_MAX=100
 ADMIN_EMAIL="admin@example.com"
 ADMIN_PASSWORD="StrongPassword123!"
 CORS_ORIGINS="http://localhost:3000,https://your-frontend-url.com"
+
+```
 
 ### 3. Set up the database
 
